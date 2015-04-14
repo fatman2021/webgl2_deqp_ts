@@ -2,18 +2,19 @@
   "name": "deqp",
   "description": "JavaScript port of Draw Elements for testing conformance of WebGL 2.",
   "keywords": [
-	"WebGL",
-	"javascript"
+    "WebGL",
+    "javascript"
   ],
   "bugs": {
     "url": "https://www.github.com/KhronosGroup/WebGL/issues"
   },
   "repository": {
-	"type": "git",
-	"url": "https://www.github.com/KhronosGroup/WebGL"
+    "type": "git",
+    "url": "https://www.github.com/KhronosGroup/WebGL"
   },
   "devDependencies": {
-	"grunt": "latest",
-	"grunt-ts": "latest"
+    "grunt": "latest",
+    "grunt-ts": "latest",
+    "typescript": "~1.4.1"
   }
 }
