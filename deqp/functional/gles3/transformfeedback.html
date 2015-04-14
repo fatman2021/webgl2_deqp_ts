@@ -13,15 +13,15 @@
 <div id="console"></div>
 <canvas id="canvas" width="320" height="240"></canvas>
 <script>
-
     requirejs.config({
-        baseUrl: "../../",
-        urlArgs: "bust=" + Date.now()
+        urlArgs: "bust=" + Date.now(), // This is disables caching by require.js
+        baseUrl: "../../"
     });
 
     requirejs(["functional/gles3/es3fTransformFeedbackTests"], function (tft) {
 
-        var gl = WebGLTestUtils.create3DContext('canvas', {preserveDrawingBuffer: true}, 2);
+        var wtu = WebGLTestUtils;
+        var gl = wtu.create3DContext('canvas', {preserveDrawingBuffer: true}, 2);
 
         try {
             tft.run(gl);
